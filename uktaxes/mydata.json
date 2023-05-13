@@ -1,0 +1,47 @@
+[
+  {
+    "Yearly": {
+      "TabTitle": "Your estimated take-home pay for 2023 is £31,224.20 a year",
+      "Based on your answers we estimate your yearly take-home pay to be:": {
+        "Income Tax": "£5,484.20",
+        "National Insurance": "£3,291.60",
+        "Total tax to pay": "£8,775.80"
+      },
+      "How we calculate your yearly results:": {
+        "Your pay": "£40,000 (you told us this)",
+        "Your tax-free allowance is": "£12,570",
+        "Your taxable pay is": "£27,430"
+      }
+    }
+  },
+  {
+    "Monthly": {
+      "TabTitle": "Your estimated take-home pay for 2023 is £2,602.01 a month",
+      "Based on your answers we estimate your monthly take-home pay to be:": {
+        "Income Tax": "£457.02",
+        "National Insurance": "£274.30",
+        "Total tax to pay": "£731.32"
+      },
+      "How we calculate your monthly results:": {
+        "Your pay": "£3,333.33 (you told us this)",
+        "Your tax-free allowance is": "£1,047.50",
+        "Your taxable pay is": "£2,285.83"
+      }
+    }
+  },
+  {
+    "Weekly": {
+      "TabTitle": "Your estimated take-home pay for 2023 is £600.46 a week",
+      "Based on your answers we estimate your weekly take-home pay to be:": {
+        "Income Tax": "£105.47",
+        "National Insurance": "£63.30",
+        "Total tax to pay": "£168.77"
+      },
+      "How we calculate your weekly results:": {
+        "Your pay": "£769.23 (you told us this)",
+        "Your tax-free allowance is": "£241.73",
+        "Your taxable pay is": "£527.50"
+      }
+    }
+  }
+]
