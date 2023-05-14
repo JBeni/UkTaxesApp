@@ -1,3 +1,6 @@
 env/Include
 env/Lib
 env/Scripts
+
+uktaxes/uktaxes/__pycache__
+uktaxes/uktaxes/spiders/__pycache__
