@@ -1,4 +1,4 @@
-# Scrapy settings for uktaxes project
+# Scrapy settings for UkTaxes project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "uktaxes"
+BOT_NAME = "UkTaxes"
 
-SPIDER_MODULES = ["uktaxes.spiders"]
-NEWSPIDER_MODULE = "uktaxes.spiders"
+SPIDER_MODULES = ["UkTaxes.spiders"]
+NEWSPIDER_MODULE = "UkTaxes.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

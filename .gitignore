@@ -1,6 +1,6 @@
-env/Include
-env/Lib
-env/Scripts
+/UkTaxes/env/Include
+/UkTaxes/env/Lib
+/UkTaxes/env/Scripts
 
-uktaxes/uktaxes/__pycache__
-uktaxes/uktaxes/spiders/__pycache__
+/UkTaxes/UkTaxes/__pycache__
+/UkTaxes/UkTaxes/spiders/__pycache__
