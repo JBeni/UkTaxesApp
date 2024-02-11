@@ -15,10 +15,23 @@ class CreditcardsSpider(scrapy.Spider):
         set_url = 'https://www.americanexpress.com/uk/credit-cards/all-cards/?inav=gb_menu_cards_pc_view_cm'
         set_url1 = 'https://www.americanexpress.com/en-gb/credit-cards/all-cards/?inav=gb_menu_cards_pc_view_cm'
 
-        yield scrapy.Request(set_url1, callback=self.start_scraping)
+        set = 'https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-everyday-credit-card/?linknav=en-gb-amex-cardshop-allcards-text-PlatCashBackEverydayCC-fc'
+        yield scrapy.Request(set, callback=self.parse_personal_cards)
 
     def start_scraping(self, response):
+        # Use XPath selector to find the link with the text "View Personal Cards" in the navbar
+        link = response.xpath('//a[contains(., "Earn cashback on all your purchases, with no annual fee.")]/@href').get()
 
+        if link:
+            # Follow the link to the "View Personal Cards" page
+            yield response.follow(link, self.parse_personal_cards)
+
+    def parse_personal_cards(self, response):
+        link = response.xpath('//span[contains(., "Earn cashback on all your purchases, with no annual fee.")]').get()
+
+        print('Beniamin Test')
+        print(link)
+        print()
         # Using the above link will need further to click on the All Cards Tab from the navigation bar so we can see all the cards from that website
         # Find and click the desired navbar menu item
         #menu_item = self.driver.find_element(By.XPATH, '//your-menu-item-xpath')
@@ -35,7 +48,7 @@ class CreditcardsSpider(scrapy.Spider):
         #     print(i.css('::text').get());
         # print('Beniamin Jitca V150 Test');
 
-        yield  { 'Data': response.css('body').extract() }
+        #yield  { 'Data': response.css('body').extract() }
 
         # print(response.css('div.sc_horizontallyFluid div').extract())
         # print(response.css('p.sc_fontType_benton_light.sc_color_white.sc_textHeading_5.sc_textAlign_left').extract())
